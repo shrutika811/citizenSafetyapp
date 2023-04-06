@@ -3,6 +3,8 @@ import 'package:citizensafety2_0/homescreen.dart';
 import 'package:citizensafety2_0/report_form.dart';
 import 'package:flutter/material.dart';
 
+import 'Screens/message_screen.dart';
+
 class SideMenuTile extends StatefulWidget {
   const SideMenuTile({
     Key? key,
@@ -92,6 +94,46 @@ class _SideMenuTileState extends State<SideMenuTile> {
               ),
               title: Text(
                 "Self Awareness",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ],
+        ),
+        Stack(
+          children: [
+            // Positioned(
+            //   height: 56,
+            //   width: 288,
+            //   child: Container(
+            //       decoration: BoxDecoration(
+            //     // color: Color(0xFF6792FF),
+            //     // color: _showBlue ? Colors.blue : Colors.red,
+            //     borderRadius: BorderRadius.all(Radius.circular(10)),
+            //   )),
+            // ),
+            SizedBox(),
+            ListTile(
+              onTap: () {
+                // setState(() {
+
+                // });
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Home(),
+                  ),
+                );
+              },
+              leading: SizedBox(
+                height: 34,
+                width: 34,
+                child: Icon(
+                  Icons.add_reaction_outlined,
+                  color: Colors.white,
+                ),
+              ),
+              title: Text(
+                "Settings",
                 style: TextStyle(color: Colors.white),
               ),
             ),

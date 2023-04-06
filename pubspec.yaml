@@ -59,6 +59,7 @@ dependencies:
   youtube: ^1.0.1
   youtube_player_flutter: ^8.1.2
   url_launcher: ^6.1.10
+  telephony: ^0.2.0
 
 dev_dependencies:
   flutter_test:
